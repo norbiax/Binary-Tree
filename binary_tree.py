@@ -7,6 +7,10 @@ class NewNode:
         self.left = None
         self.right = None
 
+    @property
+    def node_property(self):
+        return '{}'.format(self.key)
+
 
 def sum_in_node(root):
     if root is None:
@@ -98,7 +102,7 @@ nodes = {
     "root.right.right.left": 2,
     "root.right.right.right": 8,
     "root.right.right.right.right": 5
-    }
+}
 
 print(list(nodes.keys()))
 print('')
